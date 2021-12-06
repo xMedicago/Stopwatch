@@ -51,10 +51,10 @@ root.iconphoto(False, photo)
 label_1 = tk.Label(root, width=5, font=("Ubuntu", 100), text="00:00")
 label_1.grid(row=0, columnspan=2)
 
-first_button = tk.Button(root, font=("Ubuntu", 30), text="Start", command=start_button, background="#cd853f")
-second_button = tk.Button(root, font=("Ubuntu", 30), text="Stop", command=stop_button, background="red")
-third_button = tk.Button(root, font=("Ubuntu", 30), width=5, text="Continue", command=continue_button, background="yellow")
-fourth_button = tk.Button(root, font=("Ubuntu", 30), width=5, text="Reset", command=reset_button, background="#AD8AAA")
+first_button = tk.Button(root, font=("Ubuntu", 30), text="Start", command=start_button, background="#cd853f", relief=tk.RAISED, bd=10)
+second_button = tk.Button(root, font=("Ubuntu", 30), text="Stop", command=stop_button, background="red", relief=tk.RAISED, bd=10)
+third_button = tk.Button(root, font=("Ubuntu", 30), width=5, text="Continue", command=continue_button, background="yellow", relief=tk.RAISED, bd=10)
+fourth_button = tk.Button(root, font=("Ubuntu", 30), width=5, text="Reset", command=reset_button, background="#AD8AAA", relief=tk.RAISED, bd=10)
 
 first_button.grid(row=1, columnspan=2, sticky="ew")
 
