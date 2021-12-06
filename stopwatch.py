@@ -45,6 +45,8 @@ def reset_button():
 root = tk.Tk()
 root.resizable(False, False)
 root.title("Секундомер")
+photo = tk.PhotoImage(file="stopwatch_46861.png")
+root.iconphoto(False, photo)
 
 label_1 = tk.Label(root, width=5, font=("Ubuntu", 100), text="00:00")
 label_1.grid(row=0, columnspan=2)
