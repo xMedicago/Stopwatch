@@ -33,7 +33,8 @@ class Stopwatch:
 
     def stopwatch(self):
         self.after_id = self.root.after(1000, self.stopwatch)
-        f_start_time = datetime.fromtimestamp(self.start_time).strftime("%M:%S")
+        hours, minutes, seconds = self.start_time // 3600, (self.start_time % 3600) // 60, self.start_time % 60
+        f_start_time = datetime.strptime(f"{hours}:{minutes}:{seconds}", "%H:%M:%S").strftime("%H:%M:%S")
         self.label_1.configure(text=str(f_start_time))
         self.start_time += 1
 
