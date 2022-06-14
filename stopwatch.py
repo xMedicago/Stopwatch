@@ -13,7 +13,7 @@ class Stopwatch:
         self.photo = tk.PhotoImage(file="stopwatch_46861.png")
         self.root.iconphoto(False, self.photo)
 
-        self.label_1 = tk.Label(self.root, width=5, font=("Ubuntu", 100), text="00:00")
+        self.label_1 = tk.Label(self.root, width=5, font=("Ubuntu", 100), text="00:00:00")
         self.label_1.grid(row=0, columnspan=2)
 
         self.first_button = tk.Button(self.root, font=("Ubuntu", 30), text="Start", command=self.start_button,
@@ -57,7 +57,7 @@ class Stopwatch:
 
     def reset_button(self):
         self.start_time = 0
-        self.label_1.configure(text="00:00")
+        self.label_1.configure(text="00:00:00")
         self.third_button.grid_forget()
         self.fourth_button.grid_forget()
         self.first_button.grid(row=1, columnspan=2, sticky="ew")
